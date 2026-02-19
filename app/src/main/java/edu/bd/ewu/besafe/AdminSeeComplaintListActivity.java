@@ -1,7 +1,5 @@
 package edu.bd.ewu.besafe;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.database.Cursor;
@@ -10,36 +8,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
 import android.widget.TextView;
-
-
 import java.util.ArrayList;
-
 
 public class AdminSeeComplaintListActivity extends AppCompatActivity {
 
     public static int globalCounter = 0;
     private ListView complaintLists;   // for complaint_list
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.complaint_list);
-
-
-
-
         complaintLists = findViewById(R.id.listComplaints);
-
-
-
-
-
-
-
-
-
         TextView btnExit = findViewById(R.id.btnExit);
 
         btnExit.setOnClickListener(new View.OnClickListener() {
@@ -50,42 +30,17 @@ public class AdminSeeComplaintListActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
-
     }
-
-
-
-
-
 
     @Override
     protected void onStart() {
         super.onStart();
-
-
-
-
-
-
-    }
-
-
+}
 //    onResume(), onPause(), onStop(), onRestart(), onDestroy()
 
     @Override
     protected void onResume() {
         super.onResume();
-
-
-
-
-
         ArrayList<Complaint_List> items = new ArrayList<>();
 
 
@@ -106,7 +61,6 @@ public class AdminSeeComplaintListActivity extends AppCompatActivity {
             String urgency = subStrings[4];
             String review = subStrings[5];
 
-
             items.add(new Complaint_List(complaint_id, issue, address, problem_faced, urgency));
         }
 
@@ -114,35 +68,21 @@ public class AdminSeeComplaintListActivity extends AppCompatActivity {
         complaintLists.setAdapter(cla);// sets rows in the layout: complaint_list
 
         //httpRequest(new String[] {}, new String[]{});
-
-
-
-
-
-
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-
-
-    }
+  }
 
     @Override
     protected void onStop() {
         super.onStop();
-
-
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-
-
-
-
     }
 
     @Override

@@ -18,11 +18,7 @@ public class AdminActivity extends AppCompatActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_home_page);
-
-
-
-
-        TextView btnSeeComplaint = findViewById(R.id.btnSeeComplaint);
+     TextView btnSeeComplaint = findViewById(R.id.btnSeeComplaint);
 
         btnSeeComplaint.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -33,9 +29,6 @@ public class AdminActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
         Button btnCheckFeedbacks = findViewById(R.id.btnCheckFeedbacks);
 
         btnCheckFeedbacks.setOnClickListener(new View.OnClickListener() {
@@ -44,16 +37,11 @@ public class AdminActivity extends AppCompatActivity {
 
             public void onClick(View v) {
 
-
-
                 Intent i = new Intent(AdminActivity.this, AdminSeeFeedbacklist.class);
                 startActivity(i);
             }
         });
-
-
-
-        TextView btnExit = findViewById(R.id.btnExit);
+      TextView btnExit = findViewById(R.id.btnExit);
 
         btnExit.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -63,32 +51,11 @@ public class AdminActivity extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
-
-
-
-
-    }
-
-
-
-
-
-
+}
     @Override
     protected void onStart() {
         super.onStart();
-
-
-
-
-
-
-    }
+}
 
 
 //    onResume(), onPause(), onStop(), onRestart(), onDestroy()
@@ -96,43 +63,25 @@ public class AdminActivity extends AppCompatActivity {
     @Override
     protected void onResume() {
         super.onResume();
-
-
-
-
-    }
+}
 
     @Override
     protected void onPause() {
         super.onPause();
-
-
-    }
+}
 
     @Override
     protected void onStop() {
         super.onStop();
-
-
-    }
+}
 
     @Override
     protected void onRestart() {
         super.onRestart();
-
-
-
-
-    }
+}
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-
-    }
-
-
-
-
-
+        }
 }
