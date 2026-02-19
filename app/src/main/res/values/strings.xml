@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">beSafe</string>
+    <string name="quotes">Punishment is not for revenge,but to lessen crime and reform the criminal - Elizabeth Fry</string>
+    <string name="submit_complaint">Submit a Complaint</string>
+    <string name="area_checking">Area Checking</string>
+    <string name="feedback">Feedback</string>
+    <string name="exit">Exit</string>
+    <string name="list_of_all_areas">List of all Areas</string>
+    <string name="complain_form">Complain form</string>
+    <string name="time">How much time you can give to solve ?</string>
+    <string name="anytime">Anytime</string>
+    <string name="_1_or_2_weeks">1 or 2 Weeks</string>
+    <string name="emergency">Emergency</string>
+    <string name="address">Address(where you found the issue):</string>
+    <string name="select_your_problem">Select Your Problem:</string>
+</resources>
