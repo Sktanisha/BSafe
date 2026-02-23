@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#e6e6fa"
+    tools:context=".user_homepageActivity">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/quotes"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="8dp"
+        android:gravity="center"
+        android:background="#5F8575"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btnSubmitComplaint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="Submit a Complaint"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#088F8F"
+            android:drawableLeft="@drawable/complain"/>
+
+
+        <Button
+            android:id="@+id/btnCheckArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="18dp"
+            android:gravity="center"
+            android:text="@string/area_checking"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#AFE1AF"
+            android:textStyle="bold"
+            android:drawableLeft="@drawable/area" />
+
+
+        <Button
+            android:id="@+id/btnFeedback"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:padding="18dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:text="@string/feedback"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:background="@drawable/rounded_corners"
+            android:backgroundTint="#4F7942"
+            android:drawableLeft="@drawable/feedback"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:baselineAligned="false">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:visibility="invisible">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:visibility="invisible">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#5F8575"
+            android:layout_weight="1"
+            >
+
+
+
+            <TextView
+                android:id="@+id/btnExit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/exit"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:clickable="true"
+                tools:ignore="NestedWeights"
+                android:focusable="true" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
